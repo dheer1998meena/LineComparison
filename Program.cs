@@ -6,14 +6,14 @@ namespace LineComparison
     {
         static void Main(string[] args)
         {
-            int x1, x2, y1, y2;
+            int X1, X2, Y1, Y2;
             Random radom = new Random();
-            x1 = radom.Next(-100, 100);
-            x2 = radom.Next(-100, 100);
-            y1 = radom.Next(-100, 100);
-            y2 = radom.Next(-100, 100);
-            Console.WriteLine("The coordinates are : " + x1 + " " + y1 + " " + x2 + " " + y2);
-            double length = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
+            X1 = radom.Next(-100, 100);
+            X2 = radom.Next(-100, 100);
+            Y1 = radom.Next(-100, 100);
+            Y2 = radom.Next(-100, 100);
+            Console.WriteLine("The coordinates are : " + X1 + " " + Y1 + " " + X2 + " " + Y2);
+            double length = Math.Sqrt(Math.Pow(X2 - X1, 2) + Math.Pow(Y2 - Y1, 2));
             Console.WriteLine("Length of the line : " + Math.Round(length, 2));
         }
     }
